@@ -1,0 +1,11 @@
+<body>
+	{{renderPage}}
+</body>
+
+<template name="layout">
+	<ul>
+		<li><a href="{{pathFor 'home'}}">Home</a></li>
+		<li><a href="{{pathFor 'candidates'}}">Candidates</a></li>
+	</ul>
+	{{> yield}}
+</template>
