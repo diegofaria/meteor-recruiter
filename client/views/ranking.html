@@ -1,0 +1,25 @@
+<template name="ranking">
+	<h1>ranking</h1>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">Front-End</div>
+		<table class="table">
+		<tr>
+			<th>Nome</th>
+			<th>Email</th>
+			<th>HTML</th>
+			<th>CSS</th>
+			<th>Javascript</th>
+		</tr>
+		</table>
+		{{#each frontEnd}}
+			<tr>
+				<td>{{name}}</td>
+				<td>{{email}}</td>
+				<td>{{skills["front-end"].html}}</td>
+				<td>{{skills["front-end"].css}}</td>
+				<td>{{skills["front-end"].javascript}}</td>
+			</tr>
+		{{/each}}
+	</div>
+</template>
