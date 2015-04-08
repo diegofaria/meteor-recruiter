@@ -1,5 +1,6 @@
 <template name="candidates">
 	<h1>Candidates</h1>
+	{{> quickForm collection="Candidates" id="insertCandidatesForm" type="insert"}}
 	<ul>
 		{{#each candidates}}
 			<li>
