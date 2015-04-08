@@ -1,3 +1,10 @@
 <template name="candidates">
 	<h1>Candidates</h1>
+	<ul>
+		{{#each candidates}}
+			<li>
+				{{name}}
+			</li>
+		{{/each}}
+	</ul>
 </template>
