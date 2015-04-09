@@ -87,6 +87,6 @@ CandidatesEngine = {
 	},
 
 	isUnqualified : function (developer) {
-		return !this.isFrontEnd() && !this.isBackEnd() && !this.isMobile()
+		return !this.isFrontEnd(developer) && !this.isBackEnd(developer) && !this.isMobile(developer)
 	}
 }
