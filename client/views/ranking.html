@@ -4,25 +4,75 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">Front-End</div>
 		<table class="table">
-		<tr>
-			<th>Nome</th>
-			<th>Email</th>
-			<th>HTML</th>
-			<th>CSS</th>
-			<th>Javascript</th>
-		</tr>
+		{{> tableHeader}}
 		{{#each frontEndDevelopers}}
-			{{> frontEndDeveloper}}
+			{{> developer}}
+		{{/each}}
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Back-End</div>
+		<table class="table">
+		{{> tableHeader}}
+		{{#each backEndDevelopers}}
+			{{> developer}}
+		{{/each}}
+		</table>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Mobile</div>
+		<table class="table">
+		{{> tableHeader}}
+		{{#each mobileDevelopers}}
+			{{> developer}}
+		{{/each}}
+		</table>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Não qualificados</div>
+		<table class="table">
+		{{> tableHeader}}
+		{{#each unqualifiedDevelopers}}
+			{{> developer}}
+		{{/each}}
+		</table>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Todos</div>
+		<table class="table">
+		{{> tableHeader}}
+		{{#each allDevelopers}}
+			{{> developer}}
 		{{/each}}
 		</table>
 	</div>
 </template>
-<template name="frontEndDeveloper">
+
+<template name="tableHeader">
+	<tr>
+		<th>Nome</th>
+		<th>Email</th>
+		<th>HTML</th>
+		<th>CSS</th>
+		<th>Javascript</th>
+		<th>Python</th>
+		<th>Django</th>
+		<th>iOs</th>
+		<th>Android</th>
+	</tr>
+</template>
+
+<template name="developer">
 	<tr>
 		<td>{{name}}</td>
 		<td>{{email}}</td>
 		<td>{{html}}</td>
 		<td>{{css}}</td>
 		<td>{{javascript}}</td>
+		<td>{{python}}</td>
+		<td>{{django}}</td>
+		<td>{{ios}}</td>
+		<td>{{android}}</td>
 	</tr>
 </template>
