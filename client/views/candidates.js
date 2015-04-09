@@ -1,5 +1,5 @@
 Router.route('candidates', {
-	path: '/candidates',
+	path: '/',
 	template: 'candidates',
 	data: function() {
 		return {
