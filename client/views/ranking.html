@@ -11,15 +11,18 @@
 			<th>CSS</th>
 			<th>Javascript</th>
 		</tr>
-		</table>
-		{{#each frontEnd}}
-			<tr>
-				<td>{{name}}</td>
-				<td>{{email}}</td>
-				<td>{{skills["front-end"].html}}</td>
-				<td>{{skills["front-end"].css}}</td>
-				<td>{{skills["front-end"].javascript}}</td>
-			</tr>
+		{{#each frontEndDevelopers}}
+			{{> frontEndDeveloper}}
 		{{/each}}
+		</table>
 	</div>
+</template>
+<template name="frontEndDeveloper">
+	<tr>
+		<td>{{name}}</td>
+		<td>{{email}}</td>
+		<td>{{html}}</td>
+		<td>{{css}}</td>
+		<td>{{javascript}}</td>
+	</tr>
 </template>

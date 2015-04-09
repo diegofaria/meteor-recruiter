@@ -77,7 +77,7 @@ Candidates.attachSchema(new SimpleSchema({
 		max: 200,
 		optional: false
 	},
-	birthday: {
+	email: {
 		type: String,
 		label: "Email",
 		optional: false,
